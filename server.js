@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/orders', orderRoutes);
 
 const mongoUri =
-  'mongodb+srv://hanmanth95:Trade%23123@cluster0.crabp.mongodb.net/Orders?retryWrites=true&w=majority';
+  'mongodb+srv://username:password@cluster0.crabp.mongodb.net/databasename?retryWrites=true&w=majority';
 mongoose
   .connect(mongoUri, { useNewUrlParser: true })
   .then(function(db) {
